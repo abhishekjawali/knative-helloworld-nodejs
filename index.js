@@ -3,7 +3,9 @@ const app = express();
 
 app.get("/", (req, res) => {
   const version = process.env.VERSION || "V1";
-  res.send(`Welcome to Serverless Meetup @ DELLEMC - ${version}!`);
+  res.send(
+    `Welcome to Serverless Meetup @ DELLEMC - from knative build - ${version}!`
+  );
 });
 
 const port = process.env.PORT || 8080;
