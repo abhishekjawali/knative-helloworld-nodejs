@@ -11,5 +11,5 @@ spec:
           container:
             image: docker.io/abhishekjv/helloworld-nodejs
             env:
-              - name: TARGET
-                value: "Node.js Sample v1"
+              - name: VERSION
+                value: "Version 1"
